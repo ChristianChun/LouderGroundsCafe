@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louder Grounds - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Sedan+SC&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-container-2">
+        <header>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="menu">
+            <h1>Our Menu</h1>
+
+            <!-- Filter Navigation with Dropdowns -->
+            <div class="menu-filter" id="menuFilter">
+                <div class="dropdown">
+                    <a href="#beverage">Drinks</a>
+                    <div class="dropdown-content">
+                        <a href="#coffees">Coffees</a>
+                        <a href="#teas">Teas</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#food">Food</a>
+                    <div class="dropdown-content">
+                        <a href="#breakfast">Breakfast</a>
+                        <a href="#lunch">Lunch</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#pastries">Pastries</a>
+                    <div class="dropdown-content">
+                        <a href="#muffins">Muffins</a>
+                        <a href="#croissants">Croissants</a>
+                        <a href="#scones">Scones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#merch">Merch</a>
+                    <div class="dropdown-content">
+                        <a href="#mugs">Mugs</a>
+                        <a href="#shirts">Clothing</a>
+                        <a href="#accessories">Accessories</a>
+                    </div>
+                </div>
+            </div>
+
+            <p id="beverage" class="section-heading">Drinks</p>
+            <!-- Coffees Section -->
+            <h2 id="coffees">Coffees</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/espresso.jpg" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold espresso shot.</p>
+                    <span>$3.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/cappuccino.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>Creamy espresso with steamed milk.</p>
+                    <span>$4.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/latte.jpg" alt="Latte">
+                    <h3>Latte</h3>
+                    <p>Smooth espresso with steamed milk.</p>
+                    <span>$4.50</span>
+                </div>
+                <!-- Add more coffee items here -->
+            </div>
+            
+            <!-- Teas Section -->
+            <h2 id="teas">Teas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/tea.jpg" alt="Green Tea">
+                    <h3>Green Tea</h3>
+                    <p>Refreshing and healthy green tea.</p>
+                    <span>$2.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/black-tea.jpg" alt="Black Tea">
+                    <h3>Black Tea</h3>
+                    <p>Strong and rich black tea.</p>
+                    <span>$2.50</span>
+                </div>
+                <!-- Add more tea items here -->
+            </div>
+
+            <p id="food" class="section-heading">  Food</p>
+
+            <!-- Breakfast Section -->
+            <h2>Breakfast</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/pancakes.jpg" alt="Green Tea">
+                    <h3>Pancakes</h3>
+                    <p>Fluffy pancakes with syrup.</p>
+                    <span>$5.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/omelette.jpg" alt="Black Tea">
+                    <h3>Omelette</h3>
+                    <p>Classic omelette with cheese and veggies.</p>
+                    <span>$6.50</span>
+                </div>
+                <!-- Add more breakfast items here -->
+            </div>
+
+            <!-- lunch Section -->
+            <h2 id="lunch">Lunch</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/sandwhich.jpg" alt="Green Tea">
+                    <h3>Turkey Sandwich</h3>
+                    <p>Fresh turkey sandwich with lettuce and tomato.</p>
+                    <span>$7.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/salad.jpg" alt="Black Tea">
+                    <h3>Ceaser Salad</h3>
+                    <p>Crisp ceaser salad with parmesan.</p>
+                    <span>$6.00</span>
+                </div>
+                <!-- Add more lunch items here -->
+            </div>
+
+            <!-- Pastries Section -->
+            <p id="pastries" class="section-heading">Pastries</p>
+
+            <!-- Muffins Section -->
+            <h2 id="muffins">Muffins</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/muffin.jpg" alt="Blueberry Muffin">
+                    <h3>Blueberry Muffin</h3>
+                    <p>Freshly baked muffin bursting with blueberries.</p>
+                    <span>$2.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/chocolate-chip-muffin.jpg" alt="Chocolate Chip Muffin">
+                    <h3>Chocolate Chip Muffin</h3>
+                    <p>Delicious muffin with rich chocolate chips.</p>
+                    <span>$2.75</span>
+                </div>
+            </div>
+
+            <!-- Croissants Section -->
+            <h2 id="croissants">Croissants</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/croissant.jpg" alt="Butter Croissant">
+                    <h3>Butter Croissant</h3>
+                    <p>Flaky, buttery croissant perfect for any time of day.</p>
+                    <span>$3.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/almond-croissant.jpg" alt="Almond Croissant">
+                    <h3>Almond Croissant</h3>
+                    <p>A buttery croissant filled with almond paste and topped with sliced almonds.</p>
+                    <span>$3.50</span>
+                </div>
+            </div>
+
+            <!-- Scones Section -->
+            <h2 id="scones">Scones</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/lemon-scone.jpg" alt="Lemon Scone">
+                    <h3>Lemon Scone</h3>
+                    <p>Zesty lemon scone with a drizzle of glaze.</p>
+                    <span>$2.75</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/blueberry-scone.jpg" alt="Blueberry Scone">
+                    <h3>Blueberry Scone</h3>
+                    <p>Fluffy scone filled with juicy blueberries.</p>
+                    <span>$3.00</span>
+                </div>
+            </div>
+
+            <!-- Merch Section -->
+            <p id="merch" class="section-heading">Merch</p>
+
+            <!-- Mugs Section -->
+            <h2 id="mugs">Mugs</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/mug.png" alt="Louder Grounds Mug">
+                    <h3>Louder Grounds Mug</h3>
+                    <p>Classic ceramic mug with our Louder Grounds logo.</p>
+                    <span>$12.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/travel-mug.png" alt="Travel Mug">
+                    <h3>Travel Mug</h3>
+                    <p>Insulated travel mug to keep your drinks warm on the go.</p>
+                    <span>$15.00</span>
+                </div>
+            </div>
+
+            <!-- Clothing Section -->
+            <h2 id="shirts">Clothing</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/t-shirt.png" alt="Louder Grounds T-Shirt">
+                    <h3>Louder Grounds T-Shirt</h3>
+                    <p>Comfortable cotton t-shirt with a stylish design.</p>
+                    <span>$20.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/hoodie.jpg" alt="Louder Grounds Hoodie">
+                    <h3>Louder Grounds Hoodie</h3>
+                    <p>Cozy hoodie featuring the Louder Grounds logo.</p>
+                    <span>$35.00</span>
+                </div>
+            </div>
+
+            <!-- Accessories Section -->
+            <h2 id="accessories">Accessories</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="temp/tote.jpg" alt="Louder Grounds Tote Bag">
+                    <h3>Louder Grounds Tote Bag</h3>
+                    <p>Reusable tote bag perfect for carrying your essentials.</p>
+                    <span>$15.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="temp/hat.jpg" alt="Louder Grounds Hat">
+                    <h3>Louder Grounds Hat</h3>
+                    <p>Stylish cap with our cafe's logo embroidered on the front.</p>
+                    <span>$18.00</span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Louder Grounds. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

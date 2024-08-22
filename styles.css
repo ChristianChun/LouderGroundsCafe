@@ -1,0 +1,616 @@
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bungee Hairline", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 40px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #e0d397;
+    text-decoration: none;
+}
+
+/* Background Container */
+.background-container {
+    background: url('temp/cafeBgV2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.background-container-2 {
+    background: url('temp/cafeBGv3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Hero Section */
+#hero {
+    height: 80vh; /* Adjust height based on viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+/* Hero Headline */
+#hero h1 {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Hero Paragraph */
+#hero p {
+    font-size: 1.5vw; /* Responsive font size */
+    font-weight: bold;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Button Styles */
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #5e5b5b;
+    color: #b8b5b5;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 80px;
+    background-color: #5e5b5b;
+    background-image: url(temp/intro.jpg);
+    background-size: cover;
+    color: #b8b5b5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.intro-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.intro-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.intro-content h3 {
+    font-size: 1.5rem;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: -15px 0;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: -15px 0px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.intro-image {
+    flex: 1;
+    text-align: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Section */
+
+/* Initial styles for the filter */
+.menu-filter {
+    background-color: #e0d397;
+    text-align: right;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Styles for when the filter is fixed */
+.menu-filter.fixed {
+    position: fixed;
+    top: 46px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(224, 211, 151, 0.9); /* Slightly transparent */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #e0d397;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#menu {
+    padding: 50px;
+    color: #fff;
+}
+
+#menu h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center; /* Keep the text centered */
+}
+
+/* Common Styles for Section Headings */
+.section-heading {
+    font-size: 3rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 180px;
+    text-align: center;
+}
+
+
+/* Beverage and Food Headings */
+#beverage {
+    display: inline-block;
+    width: 200px;
+}
+
+#food {
+    margin-top: 80px;
+    display: inline-block;
+    width: 150px; 
+}
+
+#pastries {
+    margin-top: 80px;
+    display: inline-block;
+    width: 290px; 
+}
+
+#merch {
+    margin-top: 80px;
+    display: inline-block;
+    width: 175px;
+}
+
+
+#menu h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center the section titles */
+    background-color: #9e956d;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Items Container */
+.menu-items {
+    display: flex;
+    justify-content: space-evenly; /* Spacing between cards */
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the cards */
+}
+
+/* Menu Item Card */
+.menu-item {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Fixed width for each card */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.menu-item span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e0d397;
+
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Parallax Sections */
+.parallax {
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-1 {
+    background-image: url('temp/parallax1.jpg'); /* Replace with your image */
+}
+
+.parallax-2 {
+    background-image: url('temp/parallax2.jpg'); /* Replace with your image */
+}
+
+.parallax .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.parallax .content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.parallax .content p {
+    font-size: 1.2rem;
+}
+
+/* Regular Content Section */
+.content-section {
+    padding: 40px 20px;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Contact Header Section */
+.contact-header {
+    background-image: url('temp/contact-header.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    max-width: 300px;
+    font-weight: 600;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+    font-weight: 600;
+    flex: 2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .intro-image img {
+        max-width: 80%;
+    }
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    #hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    #hero h1 {
+        font-size: 6vw;
+    }
+
+    #hero p {
+        font-size: 3vw;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #hero h1 {
+        font-size: 8vw;
+    }
+
+    #hero p {
+        font-size: 4vw;
+    }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-form-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        max-width: 100%;
+        text-align: center; /* Centers the text and form */
+    }
+
+    .contact-info {
+        margin-bottom: 40px; /* Adds space between the sections */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info p {
+        font-size: 1rem; /* Reduces font size for better fit */
+    }
+
+    .contact-form .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input, 
+    .form-group textarea {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
